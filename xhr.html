@@ -1,0 +1,3 @@
+<esi:comment text="
+---- WARNING: GENERATED ESI ----
+"/><esi:assign name="name" value="$(QUERY_STRING{'name'}|'foo')"/><esi:assign name="url" value="$(QUERY_STRING{'url'}|'http://'+$(HTTP_HOST)+'/')"/><esi:assign name="alt" value="$(QUERY_STRING{'alt'}|'http://'+$(HTTP_HOST)+'/default.json')"/><esi:text><esi:assign name="</esi:text><esi:vars>$(name)</esi:vars><esi:text>">'</esi:text><esi:include src="$(url)" alt="$(alt)" dca="none" onerror="continue"/><esi:text>'</esi:assign></esi:text>
